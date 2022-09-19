@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DataService\ClassGroupDataService.cs" />
+    <Compile Remove="DataService\Interfaces\oldIBaseCrudDataService.cs" />
+    <Compile Remove="DataService\oldBaseCrudDataService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MAC.Data.DTO\MAC.Data.DTO.csproj" />
+    <ProjectReference Include="..\MAC.Data\MAC.Data.csproj" />
+  </ItemGroup>
+
+</Project>

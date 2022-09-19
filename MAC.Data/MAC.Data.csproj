@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Repository\oldGenericRepository.cs" />
+    <Compile Remove="Repository\oldIGenericRepository.cs" />
+    <Compile Remove="UnitOfWork\oldIUnitOfWork.cs" />
+    <Compile Remove="UnitOfWork\oldUnitOfWork.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MAC.Data.Entities\MAC.Data.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
